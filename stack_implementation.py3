@@ -1,7 +1,7 @@
 import sys
 
 
-class Stack(object):
+class Stack:
 
     def __init__(self):
         self.stack = []

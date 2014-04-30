@@ -1,7 +1,7 @@
 import sys
 
 
-class BinarySearchTree(object):
+class BinarySearchTree:
 
     def __init__(self, item, left=None, right=None):
         self.item = item
