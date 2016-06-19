@@ -1,6 +1,5 @@
 import sys
 
-ZERO = "Zero"
 ONE_TO_19 = ("", "One", "Two", "Three", "Four", "Five", "Six", "Seven",
 "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen",
 "Sixteen", "Seventeen", "Eighteen", "Nineteen")
@@ -39,7 +38,9 @@ def big_values(n):
 
 def convert_to_text(n):
     if n == 0:
-        return ZERO
+        return "ZeroDollars"
+    if n == 1:
+        return "OneDollar"
     big_number, m = big_values(n)
     small_number =  small_value(m)
     return big_number + small_number + "Dollars"
