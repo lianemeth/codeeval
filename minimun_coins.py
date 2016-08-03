@@ -1,7 +1,6 @@
 import sys
 
 def mininum_coins(value):
-    coin_array = [1,3,5]
     coins_5 = value / 5
     value = value - (coins_5 * 5)
     coins_3 = value / 3
